@@ -12,7 +12,7 @@
     """,
     'author': 'sybdeb',
     'website': 'https://github.com/sybdeb/product_validation_wizard',
-    'depends': ['product', 'purchase', 'stock', 'website'],  # Voeg 'supplier_pricelist_sync' toe als geïnstalleerd
+    'depends': ['product', 'purchase', 'stock', 'website', 'supplier_pricelist_sync'],
     'data': [
         'views/product_views.xml',
         'views/wizard_views.xml',
