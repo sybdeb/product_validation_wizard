@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_form_inherit_validation" model="ir.ui.view">
+        <field name="name">product.product.form.inherit.validation</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="%(action_product_validation_wizard)d" string="Valideer voor Publicatie" type="action" class="oe_highlight" invisible="is_published == True"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
